@@ -1,0 +1,84 @@
+# Weekly Health Report - Zycus - Titan S2P Implementation
+
+Generated: 2026-07-08T15:34:51
+As of: 2026-07-02
+
+## Executive Summary
+
+Zycus - Titan S2P Implementation is rated AMBER with a computed score of 61.9. The project is 57% complete against an expected 57%, with 19 overdue incomplete tasks and 15 incomplete critical tasks.
+
+## Health Score
+
+- Computed RAG: AMBER
+- Final score: 61.9
+- Confidence: 70%
+- Workbook RAG: GREEN
+- RAG comparison: Computed status is AMBER, while the workbook reports GREEN. The agent does not copy workbook health; it recomputes status from task-level signals.
+
+## Component Evidence
+
+### Schedule Health
+Score: 74.31 | Weight: 30%
+- Completion is 57% against expected 57%.
+- 19 incomplete tasks are past their planned finish date.
+- 80 task rows carry a Red health signal.
+
+### Budget Burn
+Score: 70.0 | Weight: 20%
+- No budget, cost, spend, or burn columns were present in the source workbooks.
+- The score is neutral and flagged with low confidence rather than assumed healthy.
+
+### Milestone Health
+Score: 62.98 | Weight: 20%
+- 34 incomplete tasks are due in the lookahead window.
+- 15 of 15 critical tasks remain incomplete.
+
+### Risks
+Score: 17.21 | Weight: 10%
+- 80 Red and 143 Amber task signals were detected.
+- 3 tasks are on hold.
+
+### Blockers
+Score: 37.42 | Weight: 10%
+- 6 stakeholder comments contain blocker language.
+- 18 incomplete tasks have zero or negative float.
+
+### Stakeholder Sentiment
+Score: 60.0 | Weight: 5%
+- Stakeholder comments contain more unresolved or risk-oriented language.
+
+### Data Quality
+Score: 91.01 | Weight: 5%
+- Validation quality score is 91.0/100.
+
+## Major Risks
+
+- 19 incomplete tasks are already past due.
+- 15 critical tasks remain incomplete.
+- 80 task-level Red signals require review.
+- 6 comments indicate blockers or open decisions.
+- Computed status is AMBER, while the workbook reports GREEN. The agent does not copy workbook health; it recomputes status from task-level signals.
+
+## Recommendations
+
+- Review overdue and zero-float tasks in the next project governance meeting.
+- Ask the project manager to confirm baseline dates and update workbook health fields after review.
+- Assign owners for 219 incomplete tasks without clear ownership.
+- Add budget or burn-rate fields so financial health can be scored with confidence.
+- Convert blocker comments into dated actions with accountable owners.
+
+## Top Blockers
+
+- Due to parallel phase 1 activities onsite workshop dates are impacted
+- JDE mapping is pending only
+- JDE field mapping remain to complete for PO outbound & GR Inbound @vinayaka.soratoor@zycus.com
+- @aftab.hashambhai@zycus.com Need meeting on calendar for this
+- @aftab.hashambhai@zycus.com  PH name need to be changed
+
+## Data Quality
+
+Quality score: 91.0/100
+
+- WARNING start_date: Some rows have blank or invalid start dates.
+- WARNING end_date: Some rows have blank or invalid end dates.
+- INFO percent_complete: Missing completion values were inferred from task status.

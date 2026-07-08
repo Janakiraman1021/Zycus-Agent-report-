@@ -1,0 +1,17 @@
+{
+  "weights": {
+    "schedule": 0.30,
+    "budget": 0.20,
+    "milestones": 0.20,
+    "risks": 0.10,
+    "blockers": 0.10,
+    "sentiment": 0.05,
+    "data_quality": 0.05
+  },
+  "thresholds": {
+    "green_min": 85,
+    "amber_min": 60
+  },
+  "lookahead_days": 14,
+  "default_llm_provider": "mock"
+}

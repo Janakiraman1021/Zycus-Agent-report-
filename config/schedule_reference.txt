@@ -1,0 +1,11 @@
+Project Health Agent Schedule Reference
+
+Name: weekly-project-health
+Cadence: Every Friday at 17:00 local time
+Command: python E:\Zycus\run.py --weekly --json --html
+Purpose: Refresh weekly project health reports after PM workbook updates.
+
+Name: monthly-portfolio-synthesis
+Cadence: First business day of each month at 09:00 local time
+Command: python E:\Zycus\run.py --monthly --ppt
+Purpose: Create the VP-level portfolio synthesis deck.

@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-07-08T15:34:51",
+  "project": {
+    "project_name": "Zycus - Titan S2P Implementation",
+    "project_manager": "Aftab Hashambhai",
+    "project_stage": "Configuration and Build phase",
+    "source_file": "S2P Project.xlsx",
+    "as_of_date": "2026-07-02",
+    "workbook_status": "GREEN",
+    "computed_status": "AMBER",
+    "discrepancy": "Computed status is AMBER, while the workbook reports GREEN. The agent does not copy workbook health; it recomputes status from task-level signals.",
+    "health_score": {
+      "final_score": 61.9,
+      "rag_status": "AMBER",
+      "confidence": 0.7,
+      "components": [
+        {
+          "name": "Schedule Health",
+          "score": 74.31,
+          "weight": 0.3,
+          "confidence": 0.88,
+          "evidence": [
+            "Completion is 57% against expected 57%.",
+            "19 incomplete tasks are past their planned finish date.",
+            "80 task rows carry a Red health signal."
+          ]
+        },
+        {
+          "name": "Budget Burn",
+          "score": 70.0,
+          "weight": 0.2,
+          "confidence": 0.35,
+          "evidence": [
+            "No budget, cost, spend, or burn columns were present in the source workbooks.",
+            "The score is neutral and flagged with low confidence rather than assumed healthy."
+          ]
+        },
+        {
+          "name": "Milestone Health",
+          "score": 62.98,
+          "weight": 0.2,
+          "confidence": 0.82,
+          "evidence": [
+            "34 incomplete tasks are due in the lookahead window.",
+            "15 of 15 critical tasks remain incomplete."
+          ]
+        },
+        {
+          "name": "Risks",
+          "score": 17.21,
+          "weight": 0.1,
+          "confidence": 0.78,
+          "evidence": [
+            "80 Red and 143 Amber task signals were detected.",
+            "3 tasks are on hold."
+          ]
+        },
+        {
+          "name": "Blockers",
+          "score": 37.42,
+          "weight": 0.1,
+          "confidence": 0.74,
+          "evidence": [
+            "6 stakeholder comments contain blocker language.",
+            "18 incomplete tasks have zero or negative float."
+          ]
+        },
+        {
+          "name": "Stakeholder Sentiment",
+          "score": 60.0,
+          "weight": 0.05,
+          "confidence": 0.7,
+          "evidence": [
+            "Stakeholder comments contain more unresolved or risk-oriented language."
+          ]
+        },
+        {
+          "name": "Data Quality",
+          "score": 91.01,
+          "weight": 0.05,
+          "confidence": 0.95,
+          "evidence": [
+            "Validation quality score is 91.0/100."
+          ]
+        }
+      ]
+    },
+    "metrics": {
+      "total_tasks": 493,
+      "active_tasks": 484,
+      "status_counts": {
+        "completed": 262,
+        "in_progress": 22,
+        "not_started": 197,
+        "on_hold": 3
+      },
+      "completion_pct": 0.575,
+      "elapsed_pct": 0.5695,
+      "expected_completion_pct": 0.5695,
+      "schedule_gap_pct": 0.0055,
+      "overdue_incomplete": 19,
+      "due_soon_incomplete": 34,
+      "red_task_signals": 80,
+      "amber_task_signals": 143,
+      "critical_tasks": 15,
+      "critical_incomplete": 15,
+      "zero_float_incomplete": 18,
+      "on_hold_tasks": 3,
+      "blocker_comment_count": 6,
+      "total_comments": 9,
+      "missing_owner_active": 219,
+      "data_quality_score": 91.0142,
+      "workbook_status": "GREEN",
+      "budget_fields_present": false,
+      "trend_points": [
+        {
+          "label": "Start",
+          "date": "2025-12-05",
+          "planned": 0.0,
+          "actual": 0.0
+        },
+        {
+          "label": "As of",
+          "date": "2026-07-02",
+          "planned": 0.5695,
+          "actual": 0.575
+        },
+        {
+          "label": "Finish",
+          "date": "2026-12-07",
+          "planned": 1.0,
+          "actual": null
+        }
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "quality_score": 91.01,
+      "missing_columns": [],
+      "issues": [
+        {
+          "severity": "warning",
+          "field": "start_date",
+          "message": "Some rows have blank or invalid start dates.",
+          "affected_rows": 1
+        },
+        {
+          "severity": "warning",
+          "field": "end_date",
+          "message": "Some rows have blank or invalid end dates.",
+          "affected_rows": 1
+        },
+        {
+          "severity": "info",
+          "field": "percent_complete",
+          "message": "Missing completion values were inferred from task status.",
+          "affected_rows": 162
+        }
+      ]
+    },
+    "top_observations": [
+      "57% average task completion across 484 active tasks.",
+      "19 overdue incomplete tasks and 15 incomplete critical tasks.",
+      "6 blocker-like comments across 9 extracted comments."
+    ]
+  },
+  "insights": {
+    "executive_summary": "Zycus - Titan S2P Implementation is rated AMBER with a computed score of 61.9. The project is 57% complete against an expected 57%, with 19 overdue incomplete tasks and 15 incomplete critical tasks.",
+    "major_risks": [
+      "19 incomplete tasks are already past due.",
+      "15 critical tasks remain incomplete.",
+      "80 task-level Red signals require review.",
+      "6 comments indicate blockers or open decisions.",
+      "Computed status is AMBER, while the workbook reports GREEN. The agent does not copy workbook health; it recomputes status from task-level signals."
+    ],
+    "recommendations": [
+      "Review overdue and zero-float tasks in the next project governance meeting.",
+      "Ask the project manager to confirm baseline dates and update workbook health fields after review.",
+      "Assign owners for 219 incomplete tasks without clear ownership.",
+      "Add budget or burn-rate fields so financial health can be scored with confidence.",
+      "Convert blocker comments into dated actions with accountable owners."
+    ],
+    "top_blockers": [
+      "Due to parallel phase 1 activities onsite workshop dates are impacted",
+      "JDE mapping is pending only",
+      "JDE field mapping remain to complete for PO outbound & GR Inbound @vinayaka.soratoor@zycus.com",
+      "@aftab.hashambhai@zycus.com Need meeting on calendar for this",
+      "@aftab.hashambhai@zycus.com  PH name need to be changed"
+    ],
+    "resource_constraints": [
+      "219 active tasks do not show an assigned owner.",
+      "Critical work needs dedicated owner review because schedule float is limited."
+    ],
+    "emerging_trends": [
+      "Progress is 1% ahead of plan versus linear elapsed schedule.",
+      "Task health mix shows 80 Red and 143 Amber signals."
+    ]
+  }
+}

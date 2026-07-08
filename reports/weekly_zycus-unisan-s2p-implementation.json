@@ -1,0 +1,188 @@
+{
+  "generated_at": "2026-07-08T15:34:51",
+  "project": {
+    "project_name": "Zycus - UniSan S2P Implementation",
+    "project_manager": "Rajat Bothra",
+    "project_stage": "Training Phase I",
+    "source_file": "Project Plan B.xlsx",
+    "as_of_date": "2026-07-02",
+    "workbook_status": "RED",
+    "computed_status": "RED",
+    "discrepancy": "Computed status agrees with workbook status: RED.",
+    "health_score": {
+      "final_score": 56.96,
+      "rag_status": "RED",
+      "confidence": 0.62,
+      "components": [
+        {
+          "name": "Schedule Health",
+          "score": 46.61,
+          "weight": 0.3,
+          "confidence": 0.88,
+          "evidence": [
+            "Completion is 44% against expected 59%.",
+            "25 incomplete tasks are past their planned finish date.",
+            "42 task rows carry a Red health signal."
+          ]
+        },
+        {
+          "name": "Budget Burn",
+          "score": 70.0,
+          "weight": 0.2,
+          "confidence": 0.35,
+          "evidence": [
+            "No budget, cost, spend, or burn columns were present in the source workbooks.",
+            "The score is neutral and flagged with low confidence rather than assumed healthy."
+          ]
+        },
+        {
+          "name": "Milestone Health",
+          "score": 36.04,
+          "weight": 0.2,
+          "confidence": 0.82,
+          "evidence": [
+            "57 incomplete tasks are due in the lookahead window.",
+            "31 of 50 critical tasks remain incomplete."
+          ]
+        },
+        {
+          "name": "Risks",
+          "score": 54.01,
+          "weight": 0.1,
+          "confidence": 0.78,
+          "evidence": [
+            "42 Red and 9 Amber task signals were detected.",
+            "0 tasks are on hold."
+          ]
+        },
+        {
+          "name": "Blockers",
+          "score": 87.47,
+          "weight": 0.1,
+          "confidence": 0.55,
+          "evidence": [
+            "0 stakeholder comments contain blocker language.",
+            "32 incomplete tasks have zero or negative float."
+          ]
+        },
+        {
+          "name": "Stakeholder Sentiment",
+          "score": 75.0,
+          "weight": 0.05,
+          "confidence": 0.35,
+          "evidence": [
+            "No stakeholder comments were available, so sentiment is neutral."
+          ]
+        },
+        {
+          "name": "Data Quality",
+          "score": 77.5,
+          "weight": 0.05,
+          "confidence": 0.95,
+          "evidence": [
+            "Validation quality score is 77.5/100."
+          ]
+        }
+      ]
+    },
+    "metrics": {
+      "total_tasks": 383,
+      "active_tasks": 383,
+      "status_counts": {
+        "completed": 149,
+        "in_progress": 42,
+        "not_started": 192
+      },
+      "completion_pct": 0.4362,
+      "elapsed_pct": 0.5875,
+      "expected_completion_pct": 0.5875,
+      "schedule_gap_pct": -0.1513,
+      "overdue_incomplete": 25,
+      "due_soon_incomplete": 57,
+      "red_task_signals": 42,
+      "amber_task_signals": 9,
+      "critical_tasks": 50,
+      "critical_incomplete": 31,
+      "zero_float_incomplete": 32,
+      "on_hold_tasks": 0,
+      "blocker_comment_count": 0,
+      "total_comments": 0,
+      "missing_owner_active": 234,
+      "data_quality_score": 77.5,
+      "workbook_status": "RED",
+      "budget_fields_present": false,
+      "trend_points": [
+        {
+          "label": "Start",
+          "date": "2026-02-11",
+          "planned": 0.0,
+          "actual": 0.0
+        },
+        {
+          "label": "As of",
+          "date": "2026-07-02",
+          "planned": 0.5875,
+          "actual": 0.4362
+        },
+        {
+          "label": "Finish",
+          "date": "2026-10-09",
+          "planned": 1.0,
+          "actual": null
+        }
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "quality_score": 77.5,
+      "missing_columns": [
+        "rag"
+      ],
+      "issues": [
+        {
+          "severity": "warning",
+          "field": "rag",
+          "message": "Optional signal 'rag' was not found; the score uses other signals.",
+          "affected_rows": 0
+        },
+        {
+          "severity": "warning",
+          "field": "start_date",
+          "message": "Some rows have blank or invalid start dates.",
+          "affected_rows": 383
+        }
+      ]
+    },
+    "top_observations": [
+      "44% average task completion across 383 active tasks.",
+      "25 overdue incomplete tasks and 31 incomplete critical tasks.",
+      "0 blocker-like comments across 0 extracted comments.",
+      "Missing or sparse signals: rag."
+    ]
+  },
+  "insights": {
+    "executive_summary": "Zycus - UniSan S2P Implementation is rated RED with a computed score of 57.0. The project is 44% complete against an expected 59%, with 25 overdue incomplete tasks and 31 incomplete critical tasks.",
+    "major_risks": [
+      "25 incomplete tasks are already past due.",
+      "31 critical tasks remain incomplete.",
+      "42 task-level Red signals require review."
+    ],
+    "recommendations": [
+      "Review overdue and zero-float tasks in the next project governance meeting.",
+      "Ask the project manager to confirm baseline dates and update workbook health fields after review.",
+      "Assign owners for 234 incomplete tasks without clear ownership.",
+      "Add budget or burn-rate fields so financial health can be scored with confidence."
+    ],
+    "top_blockers": [
+      "No explicit blocker comments were captured in the workbook."
+    ],
+    "resource_constraints": [
+      "234 active tasks do not show an assigned owner.",
+      "Critical work needs dedicated owner review because schedule float is limited."
+    ],
+    "emerging_trends": [
+      "Progress is 15% behind plan versus linear elapsed schedule.",
+      "Task health mix shows 42 Red and 9 Amber signals."
+    ]
+  }
+}

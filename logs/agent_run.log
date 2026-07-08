@@ -1,0 +1,7 @@
+2026-07-08 15:34:49,124 | INFO | Starting Project Health Reporting Agent
+2026-07-08 15:34:49,125 | INFO | Data directory: E:\Zycus\data
+2026-07-08 15:34:50,631 | INFO | Evaluated 2 project workbooks
+2026-07-08 15:34:51,472 | INFO | Generated 6 charts
+2026-07-08 15:34:51,486 | INFO | Generated 14 report artifacts
+2026-07-08 15:34:51,491 | INFO | Reasoning provider: mock, used_llm=False
+2026-07-08 15:34:51,494 | INFO | Agent run completed successfully

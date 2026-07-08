@@ -1,0 +1,76 @@
+# Weekly Health Report - Zycus - UniSan S2P Implementation
+
+Generated: 2026-07-08T15:34:51
+As of: 2026-07-02
+
+## Executive Summary
+
+Zycus - UniSan S2P Implementation is rated RED with a computed score of 57.0. The project is 44% complete against an expected 59%, with 25 overdue incomplete tasks and 31 incomplete critical tasks.
+
+## Health Score
+
+- Computed RAG: RED
+- Final score: 56.96
+- Confidence: 62%
+- Workbook RAG: RED
+- RAG comparison: Computed status agrees with workbook status: RED.
+
+## Component Evidence
+
+### Schedule Health
+Score: 46.61 | Weight: 30%
+- Completion is 44% against expected 59%.
+- 25 incomplete tasks are past their planned finish date.
+- 42 task rows carry a Red health signal.
+
+### Budget Burn
+Score: 70.0 | Weight: 20%
+- No budget, cost, spend, or burn columns were present in the source workbooks.
+- The score is neutral and flagged with low confidence rather than assumed healthy.
+
+### Milestone Health
+Score: 36.04 | Weight: 20%
+- 57 incomplete tasks are due in the lookahead window.
+- 31 of 50 critical tasks remain incomplete.
+
+### Risks
+Score: 54.01 | Weight: 10%
+- 42 Red and 9 Amber task signals were detected.
+- 0 tasks are on hold.
+
+### Blockers
+Score: 87.47 | Weight: 10%
+- 0 stakeholder comments contain blocker language.
+- 32 incomplete tasks have zero or negative float.
+
+### Stakeholder Sentiment
+Score: 75.0 | Weight: 5%
+- No stakeholder comments were available, so sentiment is neutral.
+
+### Data Quality
+Score: 77.5 | Weight: 5%
+- Validation quality score is 77.5/100.
+
+## Major Risks
+
+- 25 incomplete tasks are already past due.
+- 31 critical tasks remain incomplete.
+- 42 task-level Red signals require review.
+
+## Recommendations
+
+- Review overdue and zero-float tasks in the next project governance meeting.
+- Ask the project manager to confirm baseline dates and update workbook health fields after review.
+- Assign owners for 234 incomplete tasks without clear ownership.
+- Add budget or burn-rate fields so financial health can be scored with confidence.
+
+## Top Blockers
+
+- No explicit blocker comments were captured in the workbook.
+
+## Data Quality
+
+Quality score: 77.5/100
+
+- WARNING rag: Optional signal 'rag' was not found; the score uses other signals.
+- WARNING start_date: Some rows have blank or invalid start dates.
